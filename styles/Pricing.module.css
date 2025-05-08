@@ -30,15 +30,22 @@
 
 @font-face {
     font-family: 'Test-Signifier';
-    src: url('/fonts/Test-Signifier.ttf') format('truetype');
+    src: url('/fonts/Test-Signifier.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Test-Signifier-Medium';
+    src: url('/fonts/TestSignifier-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 .container {
-    max-width: 100%;
+    max-width: 80%;
+    margin: 0px auto;
     overflow-x: hidden;
-    font-family: "SuisseIntl";
+    font-family: "SuisseIntl-Regular";
 }
 
 .main {
@@ -50,7 +57,7 @@
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 60px;
     font-weight: 700;
     margin-bottom: 1rem;
     font-family: "Test-Signifier";
@@ -78,7 +85,7 @@
 }
 
 .toggleButton {
-    padding: 0.5rem 1.5rem;
+    padding: 5px 2.5rem;
     border: none;
     background: none;
     cursor: pointer;
@@ -100,7 +107,7 @@
 .pricingCard {
     border: 1px solid #14141433;
     border-radius: 0.5rem;
-    padding: 2rem;
+    padding: 2rem 1rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -119,16 +126,18 @@
 
 .planHeader {
     margin-bottom: 1.5rem;
+    border-bottom: 0.5px solid #1414141A;
+    padding-bottom: 1.5rem;
 }
 
 .planHeader h3 {
-    font-size: 1.5rem;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 .price {
-    font-size: 1.25rem;
+    font-size: 14px;
     color: #4b5563;
     margin-bottom: 0;
 }
@@ -139,18 +148,11 @@
     right: 1rem;
     background-color: #006A8C;
     color: white;
-    font-size: 0.75rem;
+    font-size: 9px;
     padding: 0.25rem 0.5rem;
     border-radius: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     font-family: "Inter", sans-serif;
-}
-
-.divider {
-    width: 100%;
-    background-color: #1414141A;
-    height: 0.5px;
-    margin-bottom: 15px;
 }
 
 .planFeatures {
@@ -162,6 +164,7 @@
     margin-bottom: 1rem;
     display: flex;
     align-items: flex-start;
+    font-size: 14px;
 }
 
 .fwReg {
@@ -197,6 +200,7 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
+    font-size: 12.8px;
 }
 
 .primaryButton:hover {
@@ -217,6 +221,7 @@
         0px 0px 0px 1px #fff;
     color: #141414;
     font-weight: 600;
+    font-size: 12.8px;
     cursor: pointer;
     transition: all 0.2s ease;
 }
@@ -245,29 +250,32 @@
 
 .promoLabel {
     display: inline-block;
-    font-size: 0.75rem;
+    font-size: 9px;
+    letter-spacing: 0.24px;
+    font-weight: 700;
     background-color: #007DA6;
     color: white;
     padding: 0.25rem 0.5rem;
     border-radius: 1rem;
     font-family: "Inter", sans-serif;
-    font-weight: 500;
+    text-transform: uppercase;
     margin-bottom: 1rem;
 }
 .promoLabelStudent {
     display: inline-block;
-    font-size: 0.75rem;
+    font-size: 9px;
+    font-weight: 700;
     background-color: #A63700;
     color: white;
     padding: 0.25rem 0.5rem;
     border-radius: 1rem;
     font-family: "Inter", sans-serif;
-    font-weight: 500;
+    text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
 .promoTitle {
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 0.75rem;
     color: #151517;
@@ -306,11 +314,11 @@
 }
 
 .faqTitle {
-    font-size: 3rem;
+    font-size: 44px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 2.5rem;
-    font-family: 'Test-Signifier';
+    font-family: 'Test-Signifier-Medium';
 }
 
 .faqItem {
@@ -320,15 +328,18 @@
 }
 
 .faqQuestion {
-    font-size: 1.25rem;
+    font-size: 18px;
+    letter-spacing: -2%;
     font-weight: 600;
     margin-bottom: 0.75rem;
     font-family: 'SuisseIntl-Regular';
 }
 
 .faqAnswer {
+    font-size: 16px;
     color: #4b5563;
     margin-bottom: 0px !important;
+    font-family: 'SuisseIntl';
 }
 
 .aiCtaSection {
@@ -338,24 +349,31 @@
     margin: 4rem 0;
     padding-top: 2rem;
 }
+.aiCtaContent{
+    padding: 0px 2rem;
+}
 
 .aiCtaTitle {
-    font-size: 2.7rem;
+    font-size: 44px;
+    letter-spacing: -1%;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    font-family: 'Test-Signifier';
+    font-family: 'Test-Signifier-Medium';
 }
 
 .aiCtaDescription {
     margin-bottom: 2rem;
     max-width: 500px;
+    color: #FFFFFFA3;
+    font-size: 16px;
 }
 
 .aiCtaButton {
-    padding: 0.75rem 1.5rem;
+    padding: 12px;
     background-color: white;
     color: #0c4a6e;
     border: none;
+    font-size: 14px;
     border-radius: 0.25rem;
     font-weight: 600;
     cursor: pointer;
@@ -380,6 +398,10 @@
 @media (max-width: 768px) {
     .main {
         padding: 1rem 0;
+    }
+
+    .container {
+        max-width: 100%;
     }
 
     .title {
